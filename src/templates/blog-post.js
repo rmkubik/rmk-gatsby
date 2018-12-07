@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
+import PropTypes from 'prop-types';
 
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
@@ -70,7 +71,7 @@ class BlogPostTemplate extends React.Component {
 }
 
 BlogPostTemplate.propTypes = {
-  location: BlogPostTemplate.string.isRequired,
+  location: PropTypes.string.isRequired,
 };
 
 export default BlogPostTemplate;
