@@ -8,13 +8,14 @@ import { rhythm, scale } from '../utils/typography';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark;
-    const siteTitle = this.props.data.site.siteMetadata.title;
+    const { data, pageContext, location } = this.props;
+    const post = data.markdownRemark;
+    const siteTitle = data.site.siteMetadata.title;
     const siteDescription = post.excerpt;
-    const { previous, next } = this.props.pageContext;
+    const { previous, next } = pageContext;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
@@ -67,6 +68,10 @@ class BlogPostTemplate extends React.Component {
     );
   }
 }
+
+BlogPostTemplate.propTypes = {
+  location: BlogPostTemplate.string.isRequired,
+};
 
 export default BlogPostTemplate;
 
