@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { rhythm } from '../utils/typography';
 
 import MainHeader from './MainHeader';
+import PostHeader from './PostHeader';
 
 class Layout extends React.Component {
   render() {
@@ -14,26 +14,7 @@ class Layout extends React.Component {
     if (location.pathname === rootPath) {
       header = <MainHeader title={title} />;
     } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginBottom: rhythm(-1),
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to="/"
-          >
-            {title}
-          </Link>
-        </h3>
-      );
+      header = <PostHeader title={title} />;
     }
     return (
       <div
@@ -52,7 +33,6 @@ class Layout extends React.Component {
 }
 
 Layout.propTypes = {
-  location: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   children: PropTypes.node,
 };

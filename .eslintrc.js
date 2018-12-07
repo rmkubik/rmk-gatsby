@@ -21,6 +21,6 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     // react/jsx-one-expression-per-line, disabled until inline elements can be allowed on the same line
     'react/jsx-one-expression-per-line': 'off',
-    'react/prop-types': ['error', { ignore: ['data', 'pageContext'] }],
+    'react/prop-types': ['error', { ignore: ['data', 'pageContext', 'location'] }],
   },
 };

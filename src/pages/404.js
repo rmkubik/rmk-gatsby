@@ -13,8 +13,4 @@ class NotFoundPage extends React.Component {
   }
 }
 
-NotFoundPage.propTypes = {
-  location: NotFoundPage.string.isRequired,
-};
-
 export default NotFoundPage;
