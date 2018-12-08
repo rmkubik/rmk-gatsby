@@ -20,7 +20,8 @@ function grabTags(data) {
 }
 
 function grabBody(data) {
-  const body = data.match(/## tags\n.*\n\n([\s\S]*)/);
+  // const body = data.match(/## tags\n.*\n\n([\s\S]*)/);
+  const body = data.match(/# .*\n([\s\S]*)/);
 
   return body && body[1];
 }
@@ -35,33 +36,36 @@ function buildFrontmatter(title, date, tags) {
   return `---
 title: ${title}
 date: ${date}
-tags: ${tags.filter((tag) => tag !== '').join(', ')}
 ---`;
 }
 
+// tags: ${tags.filter((tag) => tag !== '').join(', ')}
+
+// const inDir = '../../til';
+const inDir = '../../tldr';
 const exceptions = ['.git', 'TODO.md', 'README.md', 'TEMPLATE.md', 'assets'];
 
 async function convert() {
-  const files = await readDir('../til');
+  const files = await readDir(inDir);
   const filesWithoutExceptions = files.filter((file) => !exceptions.includes(file));
 
-  const filePromises = filesWithoutExceptions.map((file) => readFile(`../til/${file}`));
+  const filePromises = filesWithoutExceptions.map((file) => readFile(`${inDir}/${file}`));
 
   const commitPromises = filesWithoutExceptions.map((file) =>
-    pexec(`git log --diff-filter=A -- ${file}`, { cwd: '../til' }),
+    pexec(`git log --diff-filter=A -- ${file}`, { cwd: inDir }),
   );
 
   Promise.all(filePromises)
     .then((markdownFiles) => {
       const titles = markdownFiles.map((file) => grabTitle(file.toString()));
-      const tags = markdownFiles.map((file) => grabTags(file.toString()));
+      // const tags = markdownFiles.map((file) => grabTags(file.toString()));
       const bodies = markdownFiles.map((file) => grabBody(file.toString()));
 
       Promise.all(commitPromises)
         .then((commits) => {
           const dates = commits.map(({ stdout }) => grabDate(stdout));
-          const frontmatters = titles.map((title, index) =>
-            buildFrontmatter(title, dates[index], tags[index]),
+          const frontmatters = titles.map(
+            (title, index) => buildFrontmatter(title, dates[index]), // tags[index]),
           );
           const newFiles = frontmatters.map(
             (frontmatter, index) => `${frontmatter}\n\n${bodies[index]}`,
