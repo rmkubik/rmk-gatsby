@@ -14,18 +14,18 @@ module.exports = {
         name: 'pages',
       },
     },
-    {
-      resolve: '@mosch/gatsby-source-github',
-      options: {
-        repository: 'til',
-        tree: true,
-        releases: true,
-        user: 'rmkubik',
-        secrets: {
-          token: process.env.GITHUB_API_KEY,
-        },
-      },
-    },
+    // {
+    //   resolve: '@mosch/gatsby-source-github',
+    //   options: {
+    //     repository: 'til',
+    //     tree: true,
+    //     releases: true,
+    //     user: 'rmkubik',
+    //     secrets: {
+    //       token: process.env.GITHUB_API_KEY,
+    //     },
+    //   },
+    // },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
