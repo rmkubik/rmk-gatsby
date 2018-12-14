@@ -27,8 +27,10 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong>Ryan Kubik</strong>.{' '}
-          <a href="https://twitter.com/ryrykubes">You should follow him on Twitter</a>
+          Written by <strong>Ryan Kubik</strong>. If you{"'"}d like to get notified when I release
+          something new, <a href="https://twitter.com/ryrykubes">follow me on twitter</a>
+          {' and '}
+          <a href="https://r-k.io/mail.html">sign up for my mailing list!</a>
         </p>
       </div>
     );
