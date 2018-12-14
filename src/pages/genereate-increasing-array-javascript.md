@@ -4,16 +4,16 @@ date: 2018-10-02T01:52:21.000Z
 tags: javascript, array, generate, increasing
 ---
 
-## explanation
-This is a fairly simple function to allow the easy creation of an array of an increasing order of indicies. This was useful for me to set certain indicies of a tilesheet of sprites as collidable while leaving others untouched. 
+This is a fairly simple function to allow the easy creation of an array of an increasing order of indicies. This was useful for me to set certain indicies of a tilesheet of sprites as collidable while leaving others untouched.
 
-`new Array(length)` lets you create an empty array of the specified length. 
+`new Array(length)` lets you create an empty array of the specified length.
 
 `Array.from(array, mapFunction)` creates a shallow copy of a given array and maps it with the provided function.
 
 Combining the two, you can create an empty of array of the desired length and the populate a copy of that array with an increasing count of indices.
 
 ## examples
+
 ```javascript
 function generateArrayOfLength(length) {
   return Array.from(new Array(length), (value, index) => index);
@@ -34,7 +34,7 @@ generateArrayFromExclusive(5, 8);
 
 ```javascript
 function generateArrayFromInclusive(low, high) {
-  return Array.from(new Array((high - low) + 1), (value, index) => low + index);
+  return Array.from(new Array(high - low + 1), (value, index) => low + index);
 }
 
 generateArrayFromInclusive(5, 8);
@@ -42,6 +42,6 @@ generateArrayFromInclusive(5, 8);
 ```
 
 ## sources
+
 https://www.jstips.co/en/javascript/create-range-0...n-easily-using-one-line/
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
-

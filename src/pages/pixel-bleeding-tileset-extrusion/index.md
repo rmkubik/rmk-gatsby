@@ -4,8 +4,6 @@ date: 2018-10-07T21:28:12.000Z
 tags: gpu, floating, sampling, pixel, bleeding, graphics, gamedev, tileset, extrusion
 ---
 
-## explanation
-
 You can visually see the issue in this gif. Notice the black lines that appear as the camera scrolls town the tilemap.
 
 ![Pixel Bleeding GIF](./pixel-bleeding.gif)

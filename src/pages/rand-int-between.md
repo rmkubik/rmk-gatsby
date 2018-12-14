@@ -4,7 +4,6 @@ date: 2018-08-15T06:17:26.000Z
 tags: javascript, random, between, range
 ---
 
-## explanation
 A simple, but useful utility function to randomly choose a float (whole number with decimal) in a range. The output includes the low number and excludes the high number.
 
 ```javascript
@@ -29,4 +28,5 @@ function intBetweenInclusive(low, high) {
 ```
 
 ## sources
+
 https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range
