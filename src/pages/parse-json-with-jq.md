@@ -7,10 +7,11 @@ category: til
 
 `jq` is a bash program that assists with the parsing of JSON formatted data. This example shows how to log the start script of an npm package to the terminal.
 
-## examples
+## Quickly view NPM Scripts in a repository
+
+`cat` will print contents of `package.json` to the console.
 
 ```bash
-# cat will print contents of package.json to the console
 cat package.json
 {
   "name": "repository",
@@ -24,8 +25,9 @@ cat package.json
 }
 ```
 
+If you pipe data into `jq` it will pretty print it with syntax highlighting.
+
 ```bash
-# If you pipe data into `jq` it will pretty print it with syntax highlighting
 cat package.json | jq
 {
   "name": "repository",
@@ -39,8 +41,9 @@ cat package.json | jq
 }
 ```
 
+Finally `jq` lets you parse the JSON via dot notation.
+
 ```bash
-# Finally jq lets you parse the JSON via dot notation
 cat package.json | jq .scripts
 {
   "build": "cross-env NODE_ENV=production webpack --progress --config webpack/prod.js",
