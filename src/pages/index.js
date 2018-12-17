@@ -22,9 +22,7 @@ class BlogIndex extends React.Component {
         />
         <Bio />
         {posts.map(({ node }) => {
-          const title =
-            `${node.frontmatter.category.toUpperCase()} - ${node.frontmatter.title}` ||
-            node.fields.slug;
+          const title = node.frontmatter.title || node.fields.slug;
           return (
             <div key={node.fields.slug}>
               <h3
@@ -36,7 +34,9 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small>
+                {`${node.frontmatter.category.toUpperCase()} - ${node.frontmatter.date}`}
+              </small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           );

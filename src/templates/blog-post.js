@@ -13,7 +13,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const siteDescription = post.excerpt;
     const { previous, next } = pageContext;
-    const title = `${post.frontmatter.category.toUpperCase()} - ${post.frontmatter.title}`;
+    const date = `${post.frontmatter.category.toUpperCase()} - ${post.frontmatter.date}`;
 
     return (
       <Layout location={location} title={siteTitle}>
@@ -22,7 +22,7 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <h1>{title}</h1>
+        <h1>{post.frontmatter.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
@@ -31,7 +31,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          {date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
