@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { rhythm } from '../utils/typography';
 
+import styles from './header.module.css';
+
 class PostHeader extends React.Component {
   render() {
     const { title } = this.props;
@@ -15,14 +17,7 @@ class PostHeader extends React.Component {
           marginBottom: rhythm(-1),
         }}
       >
-        <Link
-          style={{
-            boxShadow: 'none',
-            textDecoration: 'none',
-            color: 'inherit',
-          }}
-          to="/"
-        >
+        <Link className={styles.header} to="/">
           {title}
         </Link>
       </h3>
