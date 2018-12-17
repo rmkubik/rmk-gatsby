@@ -22,7 +22,9 @@ class BlogIndex extends React.Component {
         />
         <Bio />
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug;
+          const title =
+            `${node.frontmatter.category.toUpperCase()} - ${node.frontmatter.title}` ||
+            node.fields.slug;
           return (
             <div key={node.fields.slug}>
               <h3
@@ -62,6 +64,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
+            category
             date(formatString: "MMMM DD, YYYY")
             title
           }
