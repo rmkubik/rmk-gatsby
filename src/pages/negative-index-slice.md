@@ -2,6 +2,7 @@
 title: Slice with a Negative Index
 date: 2018-01-16T07:18:18.000Z
 tags: javascript, array
+category: til
 ---
 
 Slice can take in two parameters for the beginning and end index: `arr.slice([begin[, end]])`. The `array.slice()` function has some interesting logic when either of those parameters is a negative value. Positive index values start iterating from the beginning of the array while negative values iterate from the end of the array.

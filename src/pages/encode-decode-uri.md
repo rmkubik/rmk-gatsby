@@ -2,6 +2,7 @@
 title: Encode and Decode URIs
 date: 2018-05-20T00:59:36.000Z
 tags: javascript, encode, decode, component, uri, url
+category: til
 ---
 
 JavaScript has a lot of built in functions to handle common issues developers run into like manipulating URLs.

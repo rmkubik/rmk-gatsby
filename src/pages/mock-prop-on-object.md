@@ -2,6 +2,7 @@
 title: Mocking a property using getters and setters
 date: 2018-01-19T00:10:11.000Z
 tags: javascript, property, mock, test
+category: til
 ---
 
 This is the [getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)/[setter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set) pattern explained on MDN that I only recently learned existed.

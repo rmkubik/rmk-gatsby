@@ -2,6 +2,7 @@
 title: Modifying the Return Value of a Constructor
 date: 2018-11-30T21:28:30.000Z
 tags: javascript, constructor, return, singleton, pool, new
+category: til
 ---
 
 The `new` keyword [does a few things behind the scenes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new#Description) to create a new instance of an object.

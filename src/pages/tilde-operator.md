@@ -2,6 +2,7 @@
 title: JavaScript Bitwise Operators
 date: 2018-02-05T20:48:43.000Z
 tags: javascript, tilde, bitwise, operators
+category: til
 ---
 
 The tilde (~) operator in JavaScript performs a bitwise not operation on its operand. Every number is represented by a series of 32 ones and zeroes called bits when bitwise operations are being performed. These numbers are represented in two's complement format. Two's complement format means that a number's negative counterpart (e.g. 5 vs. -5) is all the number's bits inverted plus one. The bitwise not operator `~` only inverts all of the bits in the operand without the final plus one. This causes the final number to be offset by one and have its sign inverted. This transformation can be represented by the formula: `y = -(x+1)`.

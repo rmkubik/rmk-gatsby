@@ -2,6 +2,7 @@
 title: Choose a Random Number Between Two Values
 date: 2018-08-15T06:17:26.000Z
 tags: javascript, random, between, range
+category: til
 ---
 
 A simple, but useful utility function to randomly choose a float (whole number with decimal) in a range. The output includes the low number and excludes the high number.

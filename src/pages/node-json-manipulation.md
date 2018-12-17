@@ -2,6 +2,7 @@
 title: Json File Manipulation with Node
 date: 2018-03-11T21:43:03.000Z
 tags: json, node, require, stringify, javascript
+category: til
 ---
 
 In my office we have some large JSON files that occasionally need duplicated updates in mutliple places. Node.js makes working with these files incredibly easy with two features.

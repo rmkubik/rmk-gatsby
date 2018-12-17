@@ -2,6 +2,7 @@
 title: Npm List Installed Packages
 date: 2018-07-18T05:47:43.000Z
 tags: javascript, node, npm
+category: til
 ---
 
 Listing npm dependencies with `npm list` is a handy feature to checkout what npm packages you've installed. However, by default this lists not only the packages you've explicitly installed but the entire dependency tree too. I usually only find myself looking for the top level packages I've installed and this is where the `--depth` flag comes in handy.

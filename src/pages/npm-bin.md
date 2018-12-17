@@ -2,6 +2,7 @@
 title: Use NPM's .bin directory instead of globally installing dependencies
 date: 2018-02-05T20:17:13.000Z
 tags: javascript, npm, global, dependency
+category: til
 ---
 
 Until recently, I thought that npm modules with a command line interface needed to be installed globally before they could be used. I found an article (in the sources) that talks about creating an `npm run cli-app` command instead of globally installing. This works because npm keeps a `.bin` directory in `node_modules` that it references cli based apps you have installed like `gulp` or `grunt`. This `.bin` directory is added to the path of all `npm run` commands so you can just directly create a npm run script like this:

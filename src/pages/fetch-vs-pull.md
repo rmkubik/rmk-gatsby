@@ -2,6 +2,7 @@
 title: Git Pull vs Fetch
 date: 2018-02-08T03:24:53.000Z
 tags: git, bash, pull, fetch
+category: til
 ---
 
 Branches in git are just a pointer to the most recent commit on their branch. `git fetch` updates the remote tracking branches and downloads any new file changes into our local repository (but not into our local branch). These changes are not pulled into your current working local branch until you run `git merge` and bring that remote branch's new changes into your branch.

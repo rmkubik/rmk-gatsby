@@ -2,6 +2,7 @@
 title: Pick Randomly From Array
 date: 2018-08-04T16:47:52.000Z
 tags: javascript, array, random, utility
+category: til
 ---
 
 In game development, especially demos where I'm not using a full library or framework, a very useful utility function is to randomly pick from a set of options. I usually accomplish this by defining an array of the options and using this utility function to randomly choose one.

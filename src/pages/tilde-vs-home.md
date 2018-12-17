@@ -2,6 +2,7 @@
 title: ~ vs. $HOME in bash
 date: 2018-01-19T20:23:35.000Z
 tags: bash, script
+category: til
 ---
 
 While writing bash scripts I've noticed the `$HOME` variable being used instead of `~` . to reference the user's home directory. It turns out that `~` is just being expanded by the terminal into the `$HOME` variable anyway. Because of this, it appears to be more robust to use `$HOME` in scripts as it's not guaranteed the tilde will be properly expanded (even though it will be in most cases).

@@ -1,6 +1,7 @@
 ---
 title: Shadowhand postmortem – Top ten takeaways
 date: 2018-07-16T16:54:55.000Z
+category: tldr
 ---
 
 [Read it Here](http://greyaliengames.com/blog/shadowhand-postmortem-top-ten-takeaways/)
@@ -9,23 +10,28 @@ by: Helen Carmichael @bchezza & Jake Birkett @greyalien
 This article has ten different takeaways the developers learned while working on their solitaire game Shadowhand. I'm going to only mention a few excerpts from these points that I hadn't seen before. If you want to read about all the rest of the takeaways, click through to the article!
 
 ## Scope
-  - How long do players expect your game to be for the price?
-  - How much content does it really need?
-  - Does your team have the skills and capacity to deliver this or do you need to pay contractors who can help?
-  - How big is the market for your game?
 
-> Speaking as a tiny team who delivered an incredibly rich and complex game that we are extremely proud of, but which is probably twice as long as it needed to be, we suggest you think very carefully about this. 
+- How long do players expect your game to be for the price?
+- How much content does it really need?
+- Does your team have the skills and capacity to deliver this or do you need to pay contractors who can help?
+- How big is the market for your game?
+
+> Speaking as a tiny team who delivered an incredibly rich and complex game that we are extremely proud of, but which is probably twice as long as it needed to be, we suggest you think very carefully about this.
 
 ## PR & Marketing
+
 > Know your strengths and plan ahead
 
 > Be honest with yourself about your strengths and weaknesses in PR and marketing, and be prepared to ask for assistance.
 
 ## Launch
+
 Plan ahead in as much detail as possible
+
 > ...good checklists is a must.
 
 Make yourself available post launch (to press & customers)
+
 > Despite the huge effort of getting the game finished and the understandable desire to take a break, this is when sustained promotion and making yourself available pays off.
 
 > Scheduling time post-launch to keep up with discussions, forums and reviews is important.

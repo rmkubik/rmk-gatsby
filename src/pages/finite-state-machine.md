@@ -2,6 +2,7 @@
 title: Basic JavaScript Finite State Machine
 date: 2018-04-13T06:52:57.000Z
 tags: fsm, state, machine, javascript, game
+category: til
 ---
 
 State machines make handling complex combinations of variables more convenient. Instead of handling every possible combination of states and actions you can only handle the particular combinations that make sense in your use case.

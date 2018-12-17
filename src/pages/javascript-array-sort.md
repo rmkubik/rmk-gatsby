@@ -2,6 +2,7 @@
 title: JavaScript's Array Sort Function
 date: 2018-04-19T04:40:19.000Z
 tags: javascript, array, sort, number
+category: til
 ---
 
 Javascript's `array.sort()` function converts all objects in the array according to their Unicode code points. This means that by default, lowercase letters will be sorted before uppercase letters of the same value.

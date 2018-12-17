@@ -2,6 +2,7 @@
 title: Box-Sizing Property in CSS
 date: 2018-03-01T23:35:23.000Z
 tags: css, property, box, model
+category: til
 ---
 
 The CSS [basic box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model) describes the layout of elemnts on the DOM via content, padding, borders, and margins. The basic model is shown below.

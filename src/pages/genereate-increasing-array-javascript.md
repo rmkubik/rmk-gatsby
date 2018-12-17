@@ -2,6 +2,7 @@
 title: Generate Array of Increasing Indices
 date: 2018-10-02T01:52:21.000Z
 tags: javascript, array, generate, increasing
+category: til
 ---
 
 This is a fairly simple function to allow the easy creation of an array of an increasing order of indicies. This was useful for me to set certain indicies of a tilesheet of sprites as collidable while leaving others untouched.

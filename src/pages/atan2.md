@@ -2,6 +2,7 @@
 title: The Atan2 Function
 date: 2018-06-16T21:13:43.000Z
 tags: javascript, atan2, tan, tangent, trigonometry
+category: til
 ---
 
 The inverse tangent function, `Math.atan()`, is useful to calculate the angle of a provided ratio of a sides of a triangle (like a velocity vector's `x` and `y` values). This can be useful to find the angle an object should be rotated to face in the direction it's moving, `Math.atan(velocity.y/velocity.x)`.

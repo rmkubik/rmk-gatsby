@@ -2,6 +2,7 @@
 title: Parse JSON with JQ
 date: 2018-09-26T06:16:00.000Z
 tags: json, bash, jq
+category: til
 ---
 
 `jq` is a bash program that assists with the parsing of JSON formatted data. This example shows how to log the start script of an npm package to the terminal.
