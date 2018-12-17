@@ -13,7 +13,6 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const siteDescription = post.excerpt;
     const { previous, next } = pageContext;
-    const date = `${post.frontmatter.date} - ${post.frontmatter.category.toUpperCase()} - `;
     const til =
       "Today I learned. A collection of random things I've recorded so I can find them again later.";
     const tldr =
@@ -35,8 +34,19 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {date}
-          {post.frontmatter.category === 'til' ? til : tldr}
+          {`${post.frontmatter.category.toUpperCase()} - ${
+            post.frontmatter.category === 'til' ? til : tldr
+          }`}
+        </p>
+        <p
+          style={{
+            ...scale(-1 / 5),
+            display: 'block',
+            marginBottom: rhythm(1),
+            marginTop: rhythm(-1),
+          }}
+        >
+          {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
