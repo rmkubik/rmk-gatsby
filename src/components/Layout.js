@@ -5,6 +5,8 @@ import { rhythm } from '../utils/typography';
 import MainHeader from './MainHeader';
 import PostHeader from './PostHeader';
 
+import './theme.css';
+
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props;
