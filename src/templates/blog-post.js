@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby';
 import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import { rhythm, scale } from '../utils/typography';
+import styles from './blog-post.module.css';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -33,10 +34,9 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
           }}
+          className={styles.date}
         >
-          {`${post.frontmatter.category.toUpperCase()} - ${
-            post.frontmatter.category === 'til' ? til : tldr
-          }`}
+          {post.frontmatter.date}
         </p>
         <p
           style={{
@@ -46,7 +46,9 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {post.frontmatter.date}
+          {`${post.frontmatter.category.toUpperCase()} - ${
+            post.frontmatter.category === 'til' ? til : tldr
+          }`}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
