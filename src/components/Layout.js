@@ -18,6 +18,7 @@ class Layout extends React.Component {
     } else {
       header = <PostHeader title={title} />;
     }
+
     return (
       <div
         style={{
