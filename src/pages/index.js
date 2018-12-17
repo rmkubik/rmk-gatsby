@@ -13,6 +13,8 @@ class BlogIndex extends React.Component {
     const siteDescription = data.site.siteMetadata.description;
     const posts = data.allMarkdownRemark.edges;
 
+    // TODO: The node.excerpt isn't including code samples for some reason!
+
     return (
       <Layout location={location} title={siteTitle}>
         <Helmet
