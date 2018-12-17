@@ -13,7 +13,11 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const siteDescription = post.excerpt;
     const { previous, next } = pageContext;
-    const date = `${post.frontmatter.category.toUpperCase()} - ${post.frontmatter.date}`;
+    const date = `${post.frontmatter.date} - ${post.frontmatter.category.toUpperCase()} - `;
+    const til =
+      "Today I learned. A collection of random things I've recorded so I can find them again later.";
+    const tldr =
+      "Too long, didn't read. Summaries, Notes, and Takeaways of Videos, Articles, and Books I've read or watched.";
 
     return (
       <Layout location={location} title={siteTitle}>
@@ -32,6 +36,7 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           {date}
+          {post.frontmatter.category === 'til' ? til : tldr}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
