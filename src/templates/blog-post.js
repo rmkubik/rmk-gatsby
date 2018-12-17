@@ -13,6 +13,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const siteDescription = post.excerpt;
     const { previous, next } = pageContext;
+    const title = `${post.frontmatter.category.toUpperCase()} - ${post.frontmatter.title}`;
 
     return (
       <Layout location={location} title={siteTitle}>
@@ -21,7 +22,7 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <h1>{title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
@@ -84,6 +85,7 @@ export const pageQuery = graphql`
       excerpt
       html
       frontmatter {
+        category
         title
         date(formatString: "MMMM DD, YYYY")
       }
