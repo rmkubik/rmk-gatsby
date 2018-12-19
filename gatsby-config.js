@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Ryan Kubik',
+    title: 'Games, Code, and Other Interesting Topics',
     author: 'Ryan Kubik',
     description: 'Games and Other Projects',
     siteUrl: 'https://www.ryankubik.com/',
