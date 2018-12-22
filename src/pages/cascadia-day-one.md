@@ -2,7 +2,7 @@
 title: Cascadia.js Day One Notes
 date: 2018-12-20T23:00:07.586Z
 tags: javascript, cascadia, notes
-category: notes
+category: tldr
 ---
 
 CascadiaJS was a single track conference of 24 amazing speakers discussing the cutting-edge of JavaScript, web development and engineering culture over the course of 2 days in mid November. These notes are from the first day of the event and the accompanying [talks are now online](https://www.youtube.com/playlist?list=PL37ZVnwpeshHipbzU5EyjRkem3U5OVWxm).
