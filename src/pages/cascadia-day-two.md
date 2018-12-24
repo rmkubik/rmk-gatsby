@@ -11,7 +11,7 @@ CascadiaJS was a single track conference of 24 amazing speakers discussing the c
 
 **Brian Leroux**
 
-- #1 problem with serverless is that nobody cares
+- Number 1 problem with serverless is that nobody cares
 
 - Did a livecoding serverless project demo to show you why you care
 
