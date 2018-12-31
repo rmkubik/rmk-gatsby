@@ -6,8 +6,6 @@ import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import { rhythm } from '../utils/typography';
 
-import styles from './index.module.css';
-
 class BlogIndex extends React.Component {
   render() {
     const { data, location } = this.props;
@@ -39,8 +37,9 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <small>
-                {`${node.frontmatter.category.toUpperCase()} - `}
-                <em className={styles.date}>{node.frontmatter.date}</em>
+                {`${node.frontmatter.category.toUpperCase()} - ${node.fields.readingTime.text} - ${
+                  node.frontmatter.date
+                }`}
               </small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
@@ -67,6 +66,9 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
+            readingTime {
+              text
+            }
           }
           frontmatter {
             category

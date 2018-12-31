@@ -82,5 +82,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography',
       },
     },
+    'gatsby-remark-reading-time',
   ],
 };
