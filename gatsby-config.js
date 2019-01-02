@@ -21,6 +21,13 @@ module.exports = {
         name: 'posts',
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/portfolio/published`,
+        name: 'portfolio',
+      },
+    },
     // {
     //   resolve: '@mosch/gatsby-source-github',
     //   options: {
