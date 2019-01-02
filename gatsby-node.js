@@ -9,56 +9,37 @@ exports.createPages = ({ graphql, actions }) => {
     const portfolioPage = path.resolve('./src/templates/portfolio-page.js');
 
     resolve(
-      // graphql(
-      //   `
-      //     {
-      //       allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
-      //         edges {
-      //           node {
-      //             fields {
-      //               slug
-      //             }
-      //             frontmatter {
-      //               title
-      //             }
-      //           }
-      //         }
-      //       }
-      //     }
-      //   `,
       graphql(
         `
           {
-            portfolio: allFile(
-              filter: { sourceInstanceName: { eq: "portfolio" }, extension: { eq: "md" } }
+            portfolio: allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              filter: { fields: { collection: { eq: "portfolio" } } }
+              limit: 1000
             ) {
               edges {
                 node {
-                  name
-                  childMarkdownRemark {
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                    }
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
                   }
                 }
               }
             }
-            posts: allFile(
-              filter: { sourceInstanceName: { eq: "posts" }, extension: { eq: "md" } }
+            posts: allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              filter: { fields: { collection: { eq: "posts" } } }
+              limit: 1000
             ) {
               edges {
                 node {
-                  name
-                  childMarkdownRemark {
-                    fields {
-                      slug
-                    }
-                    frontmatter {
-                      title
-                    }
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
                   }
                 }
               }
@@ -73,11 +54,11 @@ exports.createPages = ({ graphql, actions }) => {
 
         // Create blog posts pages.
         const posts = result.data.posts.edges;
+
         posts.forEach((post, index) => {
-          const previous =
-            index === posts.length - 1 ? null : posts[index + 1].node.childMarkdownRemark;
-          const next = index === 0 ? null : posts[index - 1].node.childMarkdownRemark;
-          const { slug } = post.node.childMarkdownRemark.fields;
+          const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+          const next = index === 0 ? null : posts[index - 1].node;
+          const { slug } = post.node.fields;
 
           createPage({
             path: slug,
@@ -90,12 +71,13 @@ exports.createPages = ({ graphql, actions }) => {
           });
         });
 
+        // Create portfolio posts pages.
         const portfolio = result.data.portfolio.edges;
+
         portfolio.forEach((portfolioItem, index) => {
-          const previous =
-            index === portfolio.length - 1 ? null : portfolio[index + 1].node.childMarkdownRemark;
-          const next = index === 0 ? null : portfolio[index - 1].node.childMarkdownRemark;
-          const { slug } = portfolioItem.node.childMarkdownRemark.fields;
+          const previous = index === portfolio.length - 1 ? null : portfolio[index + 1].node;
+          const next = index === 0 ? null : portfolio[index - 1].node;
+          const { slug } = portfolioItem.node.fields;
 
           createPage({
             path: slug,
@@ -121,6 +103,16 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       name: 'slug',
       node,
       value,
+    });
+
+    // Create a field on this node for the "collection" of the parent
+    // NOTE: This is necessary so we can filter `allMarkdownRemark` by
+    // `collection` otherwise there is no way to filter for only markdown
+    // documents of type `post`.
+    createNodeField({
+      node,
+      name: 'collection',
+      value: getNode(node.parent).sourceInstanceName,
     });
   }
 };
