@@ -14,10 +14,6 @@ class PortfolioPageTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const siteDescription = post.excerpt;
     const { previous, next } = pageContext;
-    const til =
-      "Today I learned. A collection of random things I've recorded so I can find them again later.";
-    const tldr =
-      "Too long, didn't read. Summaries, Notes, and Takeaways of Videos, Articles, and Books I've read or watched.";
 
     return (
       <Layout location={location} title={siteTitle}>
@@ -45,11 +41,7 @@ class PortfolioPageTemplate extends React.Component {
             marginBottom: rhythm(2),
             marginTop: rhythm(-1),
           }}
-        >
-          {`${post.frontmatter.category.toUpperCase()} - ${
-            post.frontmatter.category === 'til' ? til : tldr
-          }`}
-        </p>
+        />
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{
