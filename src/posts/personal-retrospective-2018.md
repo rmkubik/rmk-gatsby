@@ -1,3 +1,5 @@
+<!-- It looks pretty good to me! I did some basic edits such as adding periods and a few colons. I noticed that you sometimes use more words than needed, so I also tried to make some things more concise. Lastly I did a few edits to help flow. A lot of it is personal taste, so follow your gut! -->
+
 ---
 title: A Personal Retrospective for 2018 and a Goal for 2019
 date: 2019-01-09
@@ -13,7 +15,7 @@ I read a post by [Jason Lengstorf](https://twitter.com/jlengstorf) about doing a
 - What didn't go well?
 - What will we change going forward?
 
-This retrospective gives you a chance to reflect on the year in relation to your personal goals. To bring this comparison, you first need to revisit the goals you had for the previous year.
+It seems like a good way to reflect on the year in relation to my personal goals. To bring this comparison, you first need to revisit the goals you had for the previous year.
 
 ## What went well?
 
@@ -21,11 +23,11 @@ This retrospective gives you a chance to reflect on the year in relation to your
 
 I didn't set yearly goals for 2018. Instead, I planned a sort of personal roadmap where I aimed to accomplish certain tasks for every quarter of the year. Additionally, I hadn't set a long term goal or "north star".
 
-Looking back, the tasks I planned on achieving revolved around the following main topics.
+Looking back, the tasks I planned on achieving revolved around the following main topics:
 
 💼 **Growing my professional network**
 
-I've only been working in the software development industry for 2 years. The most common piece of advice I receive from more established developers is to grow my professional network. Following that piece of advice, most developers advised that attending and speaking at developer events and meetups.
+I've only been working in the software development industry for 2 years and still have a lot to learn. The most common piece of advice I receive from more established developers is to grow my professional network, and a lot suggest that attending and speaking at developer events and Meetups is a great way to do this.
 
 - I was able to get a [good bit of writing via TIL](https://github.com/rmkubik/til) on my [newly published blog](https://ryankubik.com/blog).
 - I gave [my first talk](https://www.youtube.com/watch?v=O7ca2ZNQR8c) at [Donut.js](https://donutjs.club/) on building web games with [Phaser](https://phaser.io/).
@@ -37,18 +39,18 @@ I relocated to Portland, OR from Morgantown, WV two years ago to take my first j
 
 - I met a group of friends at [Global Game Jam](https://globalgamejam.org/) and hang out with them regularly now.
 - I started volunteering with [PIGSquad](https://pigsquad.com/) and made a lot of great new friends!
-- I began attending local meetups like [Donut.js](https://donutjs.club/) that focused on community and not just technology
+- I began attending local Meetups like [Donut.js](https://donutjs.club/) that focused on community and not just technology.
 
 📚 **Learning new technical skills**
 
 The web is constantly changing and every day brings cool new tools and technologies. In order to keep pace with these changes, I set several goals to read books, take courses, and use new techs.
 
-- I started practicing writing with my recently published blog
-- I started reading again, almost none of these books were technical. I've been finding books on "soft skills" much more useful lately. Some examples:
-  - [Make & Shine](https://smile.amazon.com/Make-Shine-makers-personal-branding-ebook/dp/B07JZVZTRH?sa-no-redirect=1) - a guide for establishing a personal brand
-  - [How to Win Friends & Influence People](https://smile.amazon.com/How-Win-Friends-Influence-People-ebook/dp/B003WEAI4E/ref=sr_1_2?s=digital-text&ie=UTF8&qid=1546927890&sr=1-2&keywords=win+friends) - the answer is to treat people nicely and with respect
-  - [Rework](https://smile.amazon.com/Rework-Jason-Fried-ebook/dp/B002MUAJ2A/ref=sr_1_3?s=digital-text&ie=UTF8&qid=1546927913&sr=1-3&keywords=rework) - a series of short thoughts on how to optimize your work
-  - [Hello Web Design](https://smile.amazon.com/Hello-Web-Design-Fundamentals-Non-Designers-ebook/dp/B0756315SQ/ref=sr_1_2?s=digital-text&ie=UTF8&qid=1546927931&sr=1-2&keywords=hello+web+design) - a practical guide to web design for non designers
+- I started practicing writing with my recently published blog.
+- I started reading again, and almost none of these books were technical. I've been finding books on "soft skills" much more useful lately. Some examples are:
+  - [Make & Shine](https://smile.amazon.com/Make-Shine-makers-personal-branding-ebook/dp/B07JZVZTRH?sa-no-redirect=1) - a guide for establishing a personal brand.
+  - [How to Win Friends & Influence People](https://smile.amazon.com/How-Win-Friends-Influence-People-ebook/dp/B003WEAI4E/ref=sr_1_2?s=digital-text&ie=UTF8&qid=1546927890&sr=1-2&keywords=win+friends) - the answer is to treat people nicely and with respect.
+  - [Rework](https://smile.amazon.com/Rework-Jason-Fried-ebook/dp/B002MUAJ2A/ref=sr_1_3?s=digital-text&ie=UTF8&qid=1546927913&sr=1-3&keywords=rework) - a series of short thoughts on how to optimize your work.
+  - [Hello Web Design](https://smile.amazon.com/Hello-Web-Design-Fundamentals-Non-Designers-ebook/dp/B0756315SQ/ref=sr_1_2?s=digital-text&ie=UTF8&qid=1546927931&sr=1-2&keywords=hello+web+design) - a practical guide to web design for non designers.
 - I started listening to a lot of technical podcasts like [Syntax.fm](http://syntax.fm) to keep up to date with new technologies.
 
 🚢 **Shipping projects, sustainably**
@@ -61,13 +63,13 @@ At the end of 2017 I was dissatisfied with the amount of unfinished projects I h
 
 The clause "sustainably" was important to me this year, so I wanted to highlight a few things I did this year that _weren't_ work.
 
-- I started playing video games again
+- I started playing video games again:
   - [Legend of Zelda: Breath of the Wild](https://www.zelda.com/breath-of-the-wild/)
   - [Steamworld Dig 2](http://imageform.se/game/steamworld-dig-2/)
   - [Megaquarium](https://www.twicecircled.com/2c/megaquarium/)
   - [The Witness](http://the-witness.net/)
   - [Overcooked! 2](http://www.ghosttowngames.com/overcooked-2/)
-- I played soccer multiple times a week Spring though Fall
+- I played soccer multiple times a week Spring though Fall.
 - I got to travel 🛫 🚂 🚗
   - Seoul and Busan in South Korea!
   - Visited friends in Pittsburgh, PA!
@@ -80,14 +82,14 @@ The clause "sustainably" was important to me this year, so I wanted to highlight
 I'm very impressed with people who have the ability to support themselves outside of hourly employment. Throughout the year, I resolved to experiment to try and find skills I can leverage to make supplemental income.
 
 - I started listening to the [Startups For the Rest of Us](https://www.startupsfortherestofus.com/) podcast. A podcast about the world of bootstrapping startups from nothing.
-- I started following [@sehurlburt](https://twitter.com/sehurlburt), [@GreyAlien](https://twitter.com/GreyAlien) and [@patio11](https://twitter.com/patio11) on Twitter. All great entrepreneurs who frequently share fascinating tips.
-- I showed my first "finished" game, [Unstable](http://unstablegame.com), at a conference called the [Portland Retro Gaming Expo](http://www.retrogamingexpo.com/).
+- I started following [@sehurlburt](https://twitter.com/sehurlburt), [@GreyAlien](https://twitter.com/GreyAlien) and [@patio11](https://twitter.com/patio11) on Twitter. All are great entrepreneurs who frequently share fascinating tips.
+- I showed my first finished game, [Unstable](http://unstablegame.com), at a conference called the [Portland Retro Gaming Expo](http://www.retrogamingexpo.com/).
 - I made \$7.44 from Unstable ads! Its a terrible return on investment, but its money that didn't come from an employer.
 
 🛠️ **New Tools and Techniques**
 
 - I started using Mint to monitor my personal finances to help estimate my monthly spending.
-- I have started taking a ton of notes to get things off my mind and out my brain. I recently read a post about ["how to have great ideas"](https://lengstorf.com/write-everything-down) that illustrates the effect I've felt after starting the practice. Mainly how disconnected ideas and random thoughts marinate over time before they coalesce into something real.
+- I have started taking a ton of notes to get things off my mind and out my brain. I recently read a post about ["how to have great ideas"](https://lengstorf.com/write-everything-down) that illustrates the effect I've felt after starting the practice: how disconnected ideas and random thoughts marinate over time before they coalesce into something real.
 - I planned my year out with a personal roadmap on Trello.
 - I've used a progression of digital note-taking tools: Evernote → iPhone Notes app → Notion.
 
@@ -95,27 +97,25 @@ I'm very impressed with people who have the ability to support themselves outsid
 
 🏗️ **Too many unfinished projects**
 
-I still had too many half finished projects at the end of this year. While I did _finally_ finish several more projects this year than last year, I left many more unfinished too. There are several factors that might have contributed to this outcome.
+I still had too many half finished projects at the end of this year. While I did _finally_ finish several more projects this year than last year, I left many more unfinished.
 
-I attempted too many game jams in the hopes they would force me to complete projects. I attempted almost one game jam/challenge per month on top of working on my other projects. Of these jams, I only actually finished a playable game I was happy with a third of the time.
-
-In some aspects this was good because it allowed me to iterate through many ideas that didn't work out. On the other hand, I didn't have enough time to see each of these ideas through long enough to see where they might succeed.
+I attempted too many game jams in the hopes they would force me to complete projects. I attempted almost one game jam/challenge per month on top of working on my other projects. Of these jams, I only finished a playable game I was happy with a third of the time. In some aspects this was good because it allowed me to iterate through many ideas that didn't work out. On the other hand, I didn't have enough time to see each of these ideas through long enough to see where they might succeed.
 
 💻 **Stopped engaging with local tech community frequently**
 
 In the beginning of the year I gave my first tech talk to an audience of around 50 people. It was terrifying! According to friends in the audience, it went well! In my memory, is just a black hole where I forgot _everything_ I said. Since then, I've put off applying to speak again.
 
-I was also on a streak of attending Portland tech events & meetups every week. As the year progressed, I slowly stopped attending as many events. In some aspects I think this was because I made friends and enjoy spending time with them! This is good news! The tradeoff is that I have stopped meeting as many new people as I used to.
+I was also on a streak of attending Portland tech events & Meetups every week. As the year progressed, I stopped attending as many events. I think this was because I made friends and enjoy spending time with them. This is good news! The tradeoff is that I have stopped meeting as many new people as I used to.
 
 After finishing Unstable I found myself without a project I had been working on for about 6 months. I was unsure what to do next, and haven't yet found another project that's grabbed me in the same way.
 
 ⚽ **Stopped playing soccer**
 
-From Spring to Fall I was playing pick up soccer multiple times a week and found myself in the best shape I've been in, in years. As the weather started to get cold I injured my foot. This caused me to stop playing for a while for my foot to heal and I haven't gone back to play since.
+From Spring to Fall I was playing pick up soccer multiple times a week and found myself in the best shape I'd been in for years. As the weather started to get cold I injured my foot. I stopped playing for a while for my foot to heal and I haven't gone back to play since.
 
-💡 **Information Avoidance, postponed important phone calls**
+💡 **Information Avoidance - postponed important phone calls**
 
-I've got a bad habit of avoiding phone calls where I'm afraid I'll get bad news. For example, there's a dentist appointment I need to schedule but I'm worried I might learn I have a cavity.
+I've got a bad habit of avoiding phone calls when I'm afraid I'll get bad news. For example, there's a dentist appointment I need to schedule but I'm worried I might learn I have a cavity.
 
 I learned that this sounds a lot like the concept of [information avoidance](https://www.cmu.edu/news/stories/archives/2017/march/information-avoidance.html) in economics.
 
@@ -153,10 +153,10 @@ I recognize its pretty vague and not terribly unique. Who doesn't want money and
 
 In addition to my yearly goals I want to try and make a few mindset changes in 2019.
 
-- I complain a lot. I've even been caught complaining about other people about complaining. I want to try to catch myself and try to [think of 3 positive things](https://lengstorf.com/how-to-be-positive) that happened recently instead.
+- I complain a lot. I've even been caught complaining about other people about complaining. I want to catch myself and [think of 3 positive things](https://lengstorf.com/how-to-be-positive) that happened recently instead.
 
 - I need to learn to stop being afraid to make phone calls, talk to strangers, and deal with uncomfortable situations.
 
 - I need to learn to enjoy time being by myself without distracting myself with work.
 
-None of these will be easy to accomplish, but I hope that keeping them in mind will get me closer to them.
+None of these will be easy to accomplish, but I hope that keeping them in mind will get me closer to them. <!-- This conclusion feels a bit brief, but not bad. You could flesh it out a bit if you feel like it. -->
