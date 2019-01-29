@@ -9,7 +9,7 @@ category: til
 
 ## A Tutorial to Get Started
 
-[This tutorial got me up to speed](https://blog.webiny.com/create-custom-eslint-rules-in-2-minutes-e3d41cb6a9a0) on publishing an internal ESLint Rule in a few minutes. The next two sections will review some of the content covered in that tutorial. However, this article will not cover the integrating of the rule into a project like the linked tutorial does.
+If you're unfamiliar with writing ESLint rules, [this tutorial got me up to speed](https://blog.webiny.com/create-custom-eslint-rules-in-2-minutes-e3d41cb6a9a0) on publishing a very simple custom ESLint rule. The next two sections will review some of the content covered in that tutorial. However, my article will not cover the integrating of the rule into a project like the linked tutorial does. After we review what an ESLint rule is, we'll look at implementing more a more complex one.
 
 ## Abstract Syntax Trees
 
