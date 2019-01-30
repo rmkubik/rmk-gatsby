@@ -9,15 +9,15 @@ category: til
 
 ## A Tutorial to Get Started
 
-If you're unfamiliar with writing ESLint rules, [this tutorial got me up to speed](https://blog.webiny.com/create-custom-eslint-rules-in-2-minutes-e3d41cb6a9a0) on publishing a very simple custom ESLint rule. The next two sections will review some of the content covered in that tutorial. However, my article will not cover the integrating of the rule into a project like the linked tutorial does. After we review what an ESLint rule is, we'll look at implementing more a more complex one.
+If you're unfamiliar with writing small, custom ESLint rules [this tutorial got me up to speed](https://blog.webiny.com/create-custom-eslint-rules-in-2-minutes-e3d41cb6a9a0). The next two sections will review some of the content covered in that tutorial. However, my article will not cover the integration of the rule into a project. Please see the previously linked tutorial for information on that. After we review what an ESLint rule is, we'll look at implementing more a more complex one.
 
 ## Abstract Syntax Trees
 
-ESLint is powered by a concept known as the [Abstract Syntax Tree (AST)](https://astsareawesome.com/#introducing-the-ast). The AST is a data structure that describes the parsed state of a section of code. It's made up of a series of nodes that each can have various child nodes. It is similar in structure to the [DOM (Document Object Model)](https://en.wikipedia.org/wiki/Document_Object_Model).
+ESLint relies on a concept called the [Abstract Syntax Tree (AST)](https://astsareawesome.com/#introducing-the-ast). The AST is a data structure that describes the parsed state of a section of code. It's made up of a series of nodes, each of which have various child nodes. This is a similar structure to the [DOM (Document Object Model)](https://en.wikipedia.org/wiki/Document_Object_Model).
 
-Like the DOM has nodes of various types that describe an HTML page(`div`, `p`, `body`, etc), the AST nodes have types as well. Instead of a web document, these types describe sections of code and include things like `Literal`, `FunctionDeclaration`, and `IfStatement`.
+Like the DOM has nodes of various types that describe an HTML page (`div`, `p`, `body`, etc), the AST nodes have types as well. Instead of a web document, AST nodes describe sections of code. This includes types like `Literal`, `FunctionDeclaration`, and `IfStatement`.
 
-Each of these node types has a specific set of properties to which it must conform. You can find these types defined in the [ast-types library on Github](https://github.com/benjamn/ast-types/blob/master/def/core.ts). These entries are desecribed programatically using a syntax like below:
+Each of these node types has a specific set of properties to which it must conform. You can find these types defined in the the [ast-types library on Github](https://github.com/benjamn/ast-types/blob/master/def/core.ts). The library describes these types using a syntax like below:
 
 ```js
 def("Statement").bases("Node");
@@ -32,7 +32,7 @@ def("IfStatement")
   .field("alternate", or(def("Statement"), null), defaults["null"]);
 ```
 
-Let's explore this definition of an `IfStatement` to understand how AST Types are defined. The `IfStatement` inherits from a base node called `Statement`. `Statement` is an empty `Node` with no special requirements. To build an If Statement you're required to provide three fields, a `test`, a `consequent`, and an `alternate`.
+Let's explore this definition of an `IfStatement` to understand AST Types definition syntax. The `IfStatement` inherits from a base node called `Statement`. `Statement` is an empty `Node` with no special requirements. To build an If Statement you must provide three fields, a `test`, a `consequent`, and an `alternate`.
 
 Each of these fields are defined as follows:
 
@@ -40,13 +40,13 @@ Each of these fields are defined as follows:
 - consquent - the code executed if the statement is true, and is of type `Statement`
 - alternate - the optional code executed if the statement is false, and is of type `Statement`
 
-We can use these same concepts to understand the various properties of other types of Nodes.
+We can use these same concepts to understand the various properties of other types of Nodes listed in the AST Types library.
 
 ## Simple ESLint Rule
 
 An ESLint rule works by creating a visitor function for a given [selector](https://eslint.org/docs/developer-guide/selectors). Generally, a selector is a string which matches the name of an [AST Node Type](https://github.com/benjamn/ast-types/blob/master/def/core.ts). This selector is used as the name of the function exported from the ESLint rule file. This function is called a "visitor function". This pattern works for [creating basic, custom ESLint rules](https://eslint.org/docs/developer-guide/working-with-rules#rule-basics) that operate on one node at a time.
 
-This example selector rule operates only on one `Identifier` node at a time. The visitor function checks to see if the node is named `'badName'` and then reports it if found. The `context.report` function allows you to report a provided node with an error message.
+The following example selector rule operates only on one `Identifier` node at a time. The visitor function checks to see if the node is named `'badName'` and then reports it if found. The `context.report` function allows you to report a provided node with an error message.
 
 ```js
 export default function(context) {
@@ -66,7 +66,7 @@ Check out the [rule snippet above in AST Explorer](https://astexplorer.net/#/gis
 
 ## ESLint Rules Can Affect Multiple Nodes
 
-By listing multiple selector and visitor functions inside of a rule you can enable your rule to interact with more than one type of node.
+ESLint rules can contain multiple selectors and visitor functions. This enables your rule to to interact with more than one type of node.
 
 This rule builds on the previous rule and also reports any `Literal` nodes that have a value of `'badValue'`.
 
@@ -169,4 +169,4 @@ You can adjust and run the [final rule on ASTExplorer](https://astexplorer.net/#
 
 ## Conclusion
 
-This was a simple example of an ESLint rule that uses multiple different visitor functions to accomplish its job. This can be useful in a variety of different cases. From ensuring no variables are declared inside of a beforeEach function to warnings about specific functions being called in a while loop.
+This was an example of an ESLint rule that uses multiple different visitor functions to do its job. This can be useful in a variety of different cases. From preventing variable declarations inside of a beforeEach function to warnings about dangerous function calls in a while loop.
