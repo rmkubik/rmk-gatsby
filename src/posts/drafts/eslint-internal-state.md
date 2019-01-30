@@ -13,11 +13,38 @@ If you're unfamiliar with writing ESLint rules, [this tutorial got me up to spee
 
 ## Abstract Syntax Trees
 
-ESLint is powered by a concept known as the [Abstract Syntax Tree (AST)](https://astsareawesome.com/#introducing-the-ast). The AST is a data structure that describes the parsed state of a section of code. It's made up of a series of nodes that have various child nodes and is similar structure to the DOM tree.
+ESLint is powered by a concept known as the [Abstract Syntax Tree (AST)](https://astsareawesome.com/#introducing-the-ast). The AST is a data structure that describes the parsed state of a section of code. It's made up of a series of nodes that each can have various child nodes. It is similar in structure to the [DOM (Document Object Model)](https://en.wikipedia.org/wiki/Document_Object_Model).
+
+Like the DOM has nodes of various types that describe an HTML page(`div`, `p`, `body`, etc), the AST nodes have types as well. Instead of a web document, these types describe sections of code and include things like `Literal`, `FunctionDeclaration`, and `IfStatement`.
+
+Each of these node types has a specific set of properties to which it must conform. You can find these types defined in the [ast-types library on Github](https://github.com/benjamn/ast-types/blob/master/def/core.ts). These entries are desecribed programatically using a syntax like below:
+
+```js
+def("Statement").bases("Node");
+def("Expression").bases("Node", "Pattern");
+def("Pattern").bases("Node");
+
+def("IfStatement")
+  .bases("Statement")
+  .build("test", "consequent", "alternate")
+  .field("test", def("Expression"))
+  .field("consequent", def("Statement"))
+  .field("alternate", or(def("Statement"), null), defaults["null"]);
+```
+
+Let's explore this definition of an `IfStatement` to understand how AST Types are defined. The `IfStatement` inherits from a base node called `Statement`. `Statement` is an empty `Node` with no special requirements. To build an If Statement you're required to provide three fields, a `test`, a `consequent`, and an `alternate`.
+
+Each of these fields are defined as follows:
+
+- test - the conditional check in the if statement, and is a Node of type `Expression`
+- consquent - the code executed if the statement is true, and is of type `Statement`
+- alternate - the optional code executed if the statement is false, and is of type `Statement`
+
+We can use these same concepts to understand the various properties of other types of Nodes.
 
 ## Simple ESLint Rule
 
-An ESLint rule works by creating a visitor function for a given [selector](https://eslint.org/docs/developer-guide/selectors). The selector is the name of the exported visitor function and it must correspond to a specific [AST Node Type (the ast-types library defines these)](https://github.com/benjamn/ast-types/blob/master/def/core.js). This pattern works for [creating basic, custom ESLint rules](https://eslint.org/docs/developer-guide/working-with-rules#rule-basics) that operate on one node at a time.
+An ESLint rule works by creating a visitor function for a given [selector](https://eslint.org/docs/developer-guide/selectors). The selector is the name of the exported visitor function and it must correspond to a specific [AST Node Type (the ast-types library defines these)](https://github.com/benjamn/ast-types/blob/master/def/core.ts). This pattern works for [creating basic, custom ESLint rules](https://eslint.org/docs/developer-guide/working-with-rules#rule-basics) that operate on one node at a time.
 
 This example selector rule operates only on one `Identifier` node at a time. The visitor function checks to see if the node is named `'badName'` and then reports it if found. The `context.report` function allows you to report a provided node with an error message.
 
