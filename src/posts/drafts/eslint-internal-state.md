@@ -44,7 +44,7 @@ We can use these same concepts to understand the various properties of other typ
 
 ## Simple ESLint Rule
 
-An ESLint rule works by creating a visitor function for a given [selector](https://eslint.org/docs/developer-guide/selectors). The selector is the name of the exported visitor function and it must correspond to a specific [AST Node Type (the ast-types library defines these)](https://github.com/benjamn/ast-types/blob/master/def/core.ts). This pattern works for [creating basic, custom ESLint rules](https://eslint.org/docs/developer-guide/working-with-rules#rule-basics) that operate on one node at a time.
+An ESLint rule works by creating a visitor function for a given [selector](https://eslint.org/docs/developer-guide/selectors). Generally, a selector is a string which matches the name of an [AST Node Type](https://github.com/benjamn/ast-types/blob/master/def/core.ts). This selector is used as the name of the function exported from the ESLint rule file. This function is called a "visitor function". This pattern works for [creating basic, custom ESLint rules](https://eslint.org/docs/developer-guide/working-with-rules#rule-basics) that operate on one node at a time.
 
 This example selector rule operates only on one `Identifier` node at a time. The visitor function checks to see if the node is named `'badName'` and then reports it if found. The `context.report` function allows you to report a provided node with an error message.
 
