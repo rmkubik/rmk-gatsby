@@ -68,7 +68,7 @@ Check out the [rule snippet above in AST Explorer](https://astexplorer.net/#/gis
 
 ESLint rules can contain multiple selectors and visitor functions. This enables your rule to to interact with more than one type of node.
 
-This rule builds on the previous rule and also reports any [`Literal`](https://github.com/benjamn/ast-types/blob/master/def/core.ts#L341) nodes that have a value of `'badValue'`.
+This rule builds on the previous rule and also reports any [`Literal`](https://github.com/benjamn/ast-types/blob/master/def/core.ts#L341) nodes that have a value of `'wrongValue'`.
 
 ```js
 export default function(context) {
@@ -79,8 +79,8 @@ export default function(context) {
       }
     },
     Literal(node) {
-      if (node.value === 'badValue') {
-        context.report(node, "Don't create a literal with badValue");
+      if (node.value === 'wrongValue') {
+        context.report(node, "Don't create a literal with wrongValue");
       }
     },
   };
