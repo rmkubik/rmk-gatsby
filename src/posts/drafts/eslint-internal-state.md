@@ -87,6 +87,8 @@ export default function(context) {
 }
 ```
 
+This is the [updated rule snippet](https://astexplorer.net/#/gist/1ff99fca3f85c2e7676ac041a88d7b53/f1e254a5ffec5b38e31f10fa28d0205579e8177c) to identify both bad nodes.
+
 ## ESLint Rules With Internal State
 
 Sometimes it can be useful to operate on a larger scope than a single node. Because an ESLint rule is contained within a normal JavaScript module, it can contain local state in private variables.
