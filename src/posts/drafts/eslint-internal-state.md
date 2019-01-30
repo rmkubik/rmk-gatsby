@@ -46,7 +46,7 @@ We can use these same concepts to understand the various properties of other typ
 
 An ESLint rule works by creating a visitor function for a given [selector](https://eslint.org/docs/developer-guide/selectors). Generally, a selector is a string which matches the name of an [AST Node Type](https://github.com/benjamn/ast-types/blob/master/def/core.ts). This selector is used as the name of the function exported from the ESLint rule file. This function is called a "visitor function". This pattern works for [creating basic, custom ESLint rules](https://eslint.org/docs/developer-guide/working-with-rules#rule-basics) that operate on one node at a time.
 
-The following example selector rule operates only on one `Identifier` node at a time. The visitor function checks to see if the node is named `'badName'` and then reports it if found. The `context.report` function allows you to report a provided node with an error message.
+The following example selector rule operates only on one [`Identifier`](https://github.com/benjamn/ast-types/blob/master/def/core.ts#L334) node at a time. The visitor function checks to see if the node is named `'badName'` and then reports it if found. The `context.report` function allows you to report a provided node with an error message.
 
 ```js
 export default function(context) {
@@ -68,7 +68,7 @@ Check out the [rule snippet above in AST Explorer](https://astexplorer.net/#/gis
 
 ESLint rules can contain multiple selectors and visitor functions. This enables your rule to to interact with more than one type of node.
 
-This rule builds on the previous rule and also reports any `Literal` nodes that have a value of `'badValue'`.
+This rule builds on the previous rule and also reports any [`Literal`](https://github.com/benjamn/ast-types/blob/master/def/core.ts#L341) nodes that have a value of `'badValue'`.
 
 ```js
 export default function(context) {
@@ -95,7 +95,7 @@ The following rule will search within the body of a function named `target` for 
 
 ### Determine When a Function Body is Entered
 
-The first selector we'll need is `FunctionDeclaration`. The visitor function will check if the node has an id named `target`. If we've visited `target` we push the node onto a local variable, `targetFunctionStack`.
+The first selector we'll need is [`FunctionDeclaration`](https://github.com/benjamn/ast-types/blob/master/def/core.ts#L180). The visitor function will check if the node has an id named `target`. If we've visited `target` we push the node onto a local variable, `targetFunctionStack`.
 
 ```js
 const targetFunctionStack = [];
