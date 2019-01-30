@@ -87,7 +87,7 @@ export default function(context) {
 }
 ```
 
-This is the [updated rule snippet](https://astexplorer.net/#/gist/1ff99fca3f85c2e7676ac041a88d7b53/f1e254a5ffec5b38e31f10fa28d0205579e8177c) to identify both bad nodes.
+This is the [updated rule snippet](https://astexplorer.net/#/gist/1ff99fca3f85c2e7676ac041a88d7b53/2f9686c48d09fd0fd9ae1026088968a93875b065) that identifies both bad nodes.
 
 ## ESLint Rules With Internal State
 
