@@ -19,10 +19,9 @@ function pickRandomlyFromArray(array) {
 // You can also bind it to the Array prototype for easy reference
 Array.prototype.pickRandom = function() {
   return pickRandomlyFromArray(this);
-}[
-  // Use it on an anonymous array
-  (1, 2, 3)
-].pickRandom();
+}
+// Then use it on an anonymous array
+[1, 2, 3].pickRandom();
 
 const arr = [4, 5, 6];
 // Call it from the Array prototype
