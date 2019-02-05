@@ -139,4 +139,4 @@ We tried to share at least one update before we went to bed each day, but got to
 
 # Be Prepared!
 
-Minimize the amount of surprises you know you'll have going into the jam. PLENTY more will show up, there's no need to bring your own. I'm going to be sticking to this mantra for my upcoming jams in 2019. I want to do fewer jams overall, but make each of them count even more! If you've got any suggestions for what's worked or what hasn't in your jam experience I'd love to hear it! You can tweet me <link> or send me an email <link>.
+Minimize the amount of surprises you know you'll have going into the jam. PLENTY more will show up, there's no need to bring your own. I'm going to be sticking to this mantra for my upcoming jams in 2019. I want to do fewer jams overall, but make each of them count even more! If you've got any suggestions for what's worked or what hasn't in your jam experience I'd love to hear it!
