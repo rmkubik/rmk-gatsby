@@ -8,7 +8,7 @@ tags: global, deliberate, game, jam, 2019, ggj, ggj19, ggj2019, retrospective, p
 
 The more game jams I enter, the more my jam objectives have changed. Early on, I was motivated to learn how a game could be built at all. Then I wondered how to build something with a team. Lately, I've been trying to figure out how to make something that is finished and polished.
 
-Previously, I'd been joining as many jams as a I could handle. I thought this would let me practice finishing more games, but I no longer think that's the best strategy. Global Game Jam was the first jam I've done as a more slow paced deliberate process, where the jam weekend itself was merely the finale. This more intentional process feels way more effective.
+Previously, I'd been joining as many jams as I could handle. I thought this would let me practice finishing more games, but I no longer think that's the best strategy. Global Game Jam was the first jam I've done as a more slow paced deliberate process, where the jam weekend itself was merely the finale. This more intentional process feels way more effective.
 
 ## Make for the Waves!
 
