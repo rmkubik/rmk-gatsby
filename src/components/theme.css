@@ -5,4 +5,10 @@
 .twitter-tweet {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1.78rem !important;
+}
+
+.image-caption {
+  text-align: center;
+  font-style: italic;
 }
