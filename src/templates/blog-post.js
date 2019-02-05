@@ -14,10 +14,16 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = data.site.siteMetadata.title;
     const siteDescription = post.excerpt;
     const { previous, next } = pageContext;
-    const til =
-      "Today I learned. A collection of random things I've recorded so I can find them again later.";
-    const tldr =
-      "Too long, didn't read. Summaries, Notes, and Takeaways of Videos, Articles, and Books I've read or watched.";
+    const getSubTitle = (category) => {
+      switch (category) {
+        case 'til':
+          return "TIL - Today I learned. A collection of random things I've recorded so I can find them again later.";
+        case 'tldr':
+          return "TLDR - Too long, didn't read. Summaries, Notes, and Takeaways of Videos, Articles, and Books I've read or watched.";
+        default:
+          return '';
+      }
+    };
 
     return (
       <Layout location={location} title={siteTitle}>
@@ -46,9 +52,7 @@ class BlogPostTemplate extends React.Component {
             marginTop: rhythm(-1),
           }}
         >
-          {`${post.frontmatter.category.toUpperCase()} - ${
-            post.frontmatter.category === 'til' ? til : tldr
-          }`}
+          {getSubTitle(post.frontmatter.category)}
         </p>
         <article dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr

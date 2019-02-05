@@ -15,6 +15,17 @@ class BlogIndex extends React.Component {
 
     // TODO: The node.excerpt isn't including code samples for some reason!
 
+    const getCategory = (frontmatter) => {
+      switch (frontmatter.category) {
+        case 'til':
+          return 'TIL - ';
+        case 'tldr':
+          return 'TLDR - ';
+        default:
+          return '';
+      }
+    };
+
     return (
       <Layout location={location} title={siteTitle}>
         <Helmet
@@ -37,7 +48,7 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <small>
-                {`${node.frontmatter.category.toUpperCase()} - ${node.fields.readingTime.text} - ${
+                {`${getCategory(node.frontmatter)}${node.fields.readingTime.text} - ${
                   node.frontmatter.date
                 }`}
               </small>

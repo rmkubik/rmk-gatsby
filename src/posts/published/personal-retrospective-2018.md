@@ -2,7 +2,6 @@
 title: A Personal Retrospective for 2018 and a Goal for 2019
 date: 2019-01-09
 tags: personal, retrospective, goals, plan
-category: tldr
 ---
 
 ## A Personal Retrospective
