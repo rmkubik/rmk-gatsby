@@ -7,12 +7,17 @@ import Layout from '../components/Layout';
 import { rhythm, scale } from '../utils/typography';
 import styles from './blog-post.module.css';
 
+// TODO: REMOVE THIS HACK
+import makeForTheWavesImage from '../posts/published/deliberate-game-jamming/make_for_the_waves.jpg';
+
 class BlogPostTemplate extends React.Component {
   render() {
     const { data, pageContext, location } = this.props;
     const post = data.markdownRemark;
     const siteTitle = data.site.siteMetadata.title;
+    const { siteUrl } = data.site.siteMetadata;
     const siteDescription = post.excerpt;
+    const { slug, socialCard } = post.fields;
     const { previous, next } = pageContext;
     const getSubTitle = (category) => {
       switch (category) {
@@ -29,7 +34,14 @@ class BlogPostTemplate extends React.Component {
       <Layout location={location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          meta={[
+            { name: 'description', content: siteDescription },
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:site', content: siteUrl },
+            { name: 'twitter:title', content: siteTitle },
+            { name: 'twitter:description', content: siteDescription },
+            { name: 'twitter:image', content: makeForTheWavesImage },
+          ]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <h1>{post.frontmatter.title}</h1>
@@ -99,6 +111,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -108,12 +121,14 @@ export const pageQuery = graphql`
       frontmatter {
         category
         title
+        socialCard
         date(formatString: "MMMM DD, YYYY")
       }
       fields {
         readingTime {
           text
         }
+        slug
       }
     }
   }

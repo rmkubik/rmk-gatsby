@@ -3,7 +3,7 @@ module.exports = {
     title: 'Games, Code, and Other Interesting Topics',
     author: 'Ryan Kubik',
     description: 'Games and Other Projects',
-    siteUrl: 'https://www.ryankubik.com/',
+    siteUrl: 'https://www.ryankubik.com',
   },
   pathPrefix: '/blog',
   plugins: [
@@ -45,6 +45,19 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-remark-social-cards',
+            options: {
+              title: {
+                field: 'title',
+              },
+              meta: {
+                parts: [
+                  { field: 'date', format: 'mmmm dS' },
+                ],
+              },
+            },
+          },
           {
             resolve: 'gatsby-remark-images',
             options: {

@@ -1,6 +1,7 @@
 ---
 title: "Deliberate Game Jamming: A Global Game Jam 2019 Retrospective"
 date: 2019-02-04
+socialCard: "/make_for_the_waves.jpg"
 tags: global, deliberate, game, jam, 2019, ggj, ggj19, ggj2019, retrospective, planning
 ---
 
