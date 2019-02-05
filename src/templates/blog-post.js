@@ -7,9 +7,6 @@ import Layout from '../components/Layout';
 import { rhythm, scale } from '../utils/typography';
 import styles from './blog-post.module.css';
 
-// TODO: REMOVE THIS HACK
-import makeForTheWavesImage from '../posts/published/deliberate-game-jamming/make_for_the_waves.jpg';
-
 class BlogPostTemplate extends React.Component {
   render() {
     const { data, pageContext, location } = this.props;
@@ -40,7 +37,7 @@ class BlogPostTemplate extends React.Component {
             { name: 'twitter:site', content: siteUrl },
             { name: 'twitter:title', content: siteTitle },
             { name: 'twitter:description', content: siteDescription },
-            { name: 'twitter:image', content: makeForTheWavesImage },
+            { name: 'twitter:image', content: `${siteUrl}${slug}twitter-card.jpg` },
           ]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
