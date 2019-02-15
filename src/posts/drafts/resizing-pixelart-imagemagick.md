@@ -5,7 +5,7 @@ tags: pixel, art, resize, imagemagick, convert
 category: til
 ---
 
-I've been doing a bit of pixel art lately in my gamedev projects, like Wildfire. This generally ends up with me creating art that is something on the scale of 32x32 pixels. But its viewed at resolutions much higher than that in game or when sharing on Twitter. I've been searching for an easy way to automate scaling of pixel art. This brings ImageMagick onto the scene.
+I've been doing a bit of pixel art lately in my gamedev projects, like Wildfire. This generally ends up with me creating art that is something on the scale of 32x32 pixels. But its viewed at resolutions much higher than that in game or when sharing on Twitter. I've been searching for an easy way to automate scaling of pixel art. The tool I've found to help with this process is called ImageMagick.
 
 I use MacOS right now, so I can use Homebrew to manage the different software installed on my computer. I installed ImageMagick via Homebrew using the following command.
 
