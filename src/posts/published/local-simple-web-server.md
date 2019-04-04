@@ -1,6 +1,6 @@
 ---
 title: Host a simple local web server using http-server
-date: 2018-12-20T04:57:02.568Z
+date: 2019-04-04
 tags: javascript, local, web, server, http, server, localhost, node, npm
 category: til
 ---
