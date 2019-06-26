@@ -52,16 +52,16 @@ Here's an example where we expect to get multiple matches on an input string:
 ```js
 const regex = /phrase/g;
 
-// command:           // output:
-regex.lastIndex       // 0
+// command:                         // output:
+regex.lastIndex                     // 0
 regex.test('phrase phrase phrase'); // true
-regex.lastIndex       // 6
+regex.lastIndex                     // 6
 regex.test('phrase phrase phrase'); // true
-regex.lastIndex       // 13
+regex.lastIndex                     // 13
 regex.test('phrase phrase phrase'); // true
-regex.lastIndex       // 20
+regex.lastIndex                     // 20
 regex.test('phrase phrase phrase'); // false
-regex.lastIndex       // 0
+regex.lastIndex                     // 0
 ```
 
 
