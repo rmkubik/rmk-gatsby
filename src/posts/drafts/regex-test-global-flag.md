@@ -5,11 +5,11 @@ tags: javascript, regex, global, test, gotcha
 category: til
 ---
 
-Using regexes in JavaScript can be tricky! One new gotcha I ran into today involves the usage of the `g` or global flag. This regex flag matches against all occurences of the regex. This can be useful to find how many times a regex is matched inside a phrase.
+Using regexes in JavaScript can be tricky! One new gotcha I ran into today involves the usage of the `g` or global flag. The global flag matches against all occurences of the regex. This can be useful to find how many times a regex is matched inside a phrase.
 
 You can enable the `g` flag in a few ways:
 
-```
+```js
 const regexSyntax = /test/g;
 const regexConstructed = new RegExp('test', 'g');
 ```
