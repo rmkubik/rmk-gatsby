@@ -1,16 +1,16 @@
 ---
-title: 'Custom Parcel Watch Tasks'
+title: 'Making a Custom Parcel Watch Task'
 date: 2019-10-29
-tags: parcel, custom, watch, build, tasks, automation, augment, jscodeshift, code, mod, modification
+tags: parcel, custom, watch, build, tasks, automation, augment, jscodeshift, code, mod, modification, extend
 ---
 
-## A Study on Extending Parcel for Rapid Prototyping
+## Extending Parcel for Rapid Prototyping
 
-Parcel is a "no-configuration" build tool and code bundler. Its very convenient for getting a new web project up and running quickly. I use it often, and was recently using it to build [my React-powered game prototype called Rountable](https://round-table.netlify.com/). Frequently, however, no configuration means that its challenging (or impossible) to extend the tool.
+Parcel is a "no-configuration" build tool and code bundler. Its very convenient for getting a new web game project up and running quickly. I use it often, and was recently using it to build [my React-powered game prototype called Rountable](https://round-table.netlify.com/). Frequently, however, no configuration means that its challenging (or impossible) to extend the tool.
 
-While working on this project, I was writing level files in a specific directory in my project. I needed a way to import them into a JavaScript module in my project. I created a `list.js` file that imports my levels and updated it manually every time I created a new level.
+This project had a series of level files in a `levels` directory. I created a `list.js` file that imports my levels as a JavaScript module to use them in my game. I had to update this file manually every time I created a new level.
 
-It looked like this:
+Here's what `list.js` looked like:
 
 ```js
 import level1 from '../../assets/levels/level1.yaml';
@@ -36,7 +36,7 @@ The DOM has nodes of various types that describe an HTML page (`div`, `p`, `body
 
 `jscodeshift` provides functions that help you create AST nodes without knowing every last property required. They call these "builder functions". We'll be using them to build create an Abstract Syntax Tree that represents our JavaScript module.
 
-The builder functions use types defined in the library `ast-types`. These types specify zero or more required fields needed to build them.
+The builder functions use the types defined in the `ast-types` library as well. These types specify zero or more required fields needed to build an AST node.
 
 There are two basic building block AST Nodes:
 
@@ -134,30 +134,32 @@ Lodash is a popular utility library you can install via npm. Be careful shipping
 
 We use `path.relative` to ensure we're importing our level files relative to our output directory.
 
-    const fs = require("fs").promises;
-    const path = require("path");
-    const camelCase = require("lodash/camelCase");
+```js
+const fs = require('fs').promises;
+const path = require('path');
+const camelCase = require('lodash/camelCase');
 
-    const EVENTS_DIR = "./assets/events";
-    const OUTPUT_DIR = "./src/events";
+const EVENTS_DIR = './assets/events';
+const OUTPUT_DIR = './src/events';
 
-    const getFileEntries = async () => {
-    	// Read all files in the eventsDir
-      const files = await fs.readdir(EVENTS_DIR);
+const getFileEntries = async () => {
+  // Read all files in the eventsDir
+  const files = await fs.readdir(EVENTS_DIR);
 
-      // Get their names and file paths relative to the ouput directory
-      return files.map(file => {
-        const baseName = path.basename(file, ".yaml");
-    		const safeName = camelCase(baseName);
-    		const fullFilePath = `${EVENTS_DIR}/${file}`;
-    		const pathRelativeToOutput = path.relative(OUTPUT_DIR, fullFilePath);
+  // Get their names and file paths relative to the ouput directory
+  return files.map((file) => {
+    const baseName = path.basename(file, '.yaml');
+    const safeName = camelCase(baseName);
+    const fullFilePath = `${EVENTS_DIR}/${file}`;
+    const pathRelativeToOutput = path.relative(OUTPUT_DIR, fullFilePath);
 
-    		return {
-    	    key: safeName,
-    	    filePath: filePathRelativeToOutputDir
-    	  }
-    	});
-    }
+    return {
+      key: safeName,
+      filePath: filePathRelativeToOutputDir,
+    };
+  });
+};
+```
 
 We can now dynamically generate a list of files and then write those files into a JavaScript module. The final piece of the puzzle is running this code automatically!
 
