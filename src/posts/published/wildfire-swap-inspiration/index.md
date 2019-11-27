@@ -14,9 +14,9 @@ Wildfire Swap is a puzzle game about swapping tiles to prevent fires from burnin
 
 I'm originally from West Virginia and moved out west to Portland, Oregon at the end of 2016. During my first year in Portland, Oregon I experienced my first wild fire. It was the [Eagle Creek Fire](https://en.wikipedia.org/wiki/Eagle_Creek_Fire) and it burned 50,000 acres in the [Columbia River Gorge](https://en.wikipedia.org/wiki/Columbia_River_Gorge), just outside of Portland.
 
-The Columbia River Gorge is a beautiful, lush canyon that follows the Columbia River as it flows out of the Cascade Mountain Range and into the Pacific Ocean. The gorge is a very popular destination for hiking and other outdoor recreation for people living in the area. Additionally, the only interstate in Oregon that heads East out of the state, I-84 runs alongside the river.
+The Columbia River Gorge is a beautiful, lush canyon that follows the Columbia River as it flows out of the Cascade Mountain Range and into the Pacific Ocean. The gorge is a very popular destination for hiking and other outdoor recreation for people living in the area. Additionally, the only interstate in Oregon that heads East out of the state, I-84, runs alongside the river.
 
-Along this highway there is a must see sightseeing location called the Vista House. From here, on a clear day you can see more miles and miles. Its beautiful. I took this photo from that vantage point in early summer of 2017.
+Along this highway there is a must see sightseeing location called the Vista House. From here, on a clear day you can see for miles and miles. Its beautiful. I took this photo from that vantage point in early summer of 2017.
 
 ![./gorge_clear.jpg](./gorge_clear.jpg)
 
