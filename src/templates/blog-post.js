@@ -28,19 +28,17 @@ class BlogPostTemplate extends React.Component {
       }
     };
 
+    const isFeaturedImagePresent = post.frontmatter.featuredImage !== null;
+
     return (
       <Layout location={location} title={siteTitle}>
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[
-            // { name: 'description', content: siteDescription },
-            // { name: 'twitter:card', content: 'summary_large_image' },
-            // { name: 'twitter:site', content: siteUrl },
-            // { name: 'twitter:title', content: siteTitle },
-            // { name: 'twitter:description', content: siteDescription },
-            // { name: 'twitter:image', content: `${siteUrl}${slug}twitter-card.jpg` },
-
-            { name: 'twitter:card', content: 'summary_large_image' },
+            {
+              name: 'twitter:card',
+              content: isFeaturedImagePresent ? 'summary_large_image' : 'summary',
+            },
             { name: 'twitter:site', content: '@ryrykubes' },
             { name: 'twitter:creator', content: '@ryrykubes' },
             { name: 'og:url', content: `${siteUrl}${slug}` },
@@ -48,10 +46,9 @@ class BlogPostTemplate extends React.Component {
             { name: 'og:description', content: post.frontmatter.desc || siteDescription },
             {
               name: 'og:image',
-              content:
-                (post.frontmatter.featuredImage &&
-                  `${siteUrl}${post.frontmatter.featuredImage.publicURL}`) ||
-                `${siteUrl}${profilePic}`,
+              content: isFeaturedImagePresent
+                ? `${siteUrl}${post.frontmatter.featuredImage.publicURL}`
+                : `${siteUrl}${profilePic}`,
             },
           ]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
