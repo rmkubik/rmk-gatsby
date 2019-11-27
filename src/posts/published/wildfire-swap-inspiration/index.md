@@ -1,5 +1,5 @@
 ---
-title: 'Fires in the Pacific Northwest Inspired Wildfire Swap'
+title: 'Wildfire Swap: A puzzle game inspired by fires in the Pacific Northwest'
 desc: 'My first time experience with wildfires after moving to the PNW.'
 featuredImage: 'wildire-worldmap-idle.2019-10-03 21_33_13.gif'
 date: 2019-11-27
