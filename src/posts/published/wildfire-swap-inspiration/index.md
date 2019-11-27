@@ -8,7 +8,7 @@ tags: indie, puzzle, game, wildfire, swap, fire, forest, pacific, north, west, p
 
 ![./wildfire-title-with-logo-trimmed.png](./wildfire-title-with-logo-trimmed.png)
 
-Wildfire Swap is a puzzle game about swapping tiles to prevent fires from burning down people's homes. While showing Wildfire Swap to folks, I've gotten recurring questions about what inspired this game. This post dives into that inspiration story and looks at where Wildfire Swap came from.
+[Wildfire Swap](https://wildfire.fun) is a puzzle game about swapping tiles to prevent fires from burning down people's homes. While showing Wildfire Swap to folks, I've gotten recurring questions about what inspired this game. This post dives into that inspiration story and looks at where Wildfire Swap came from.
 
 ## The Inspiration Behind Wildfire Swap
 
@@ -34,7 +34,7 @@ Living so near this new-to-me force of nature kindled an desire in learning more
 
 ![./wildire-worldmap-idle.2019-10-03 21_33_13.gif](./wildire-worldmap-idle.2019-10-03 21_33_13.gif)
 
-Wildfire Swap is a game about exploring the efforts to control those massive fires. It explores how a small spark can quickly turn into a raging inferno and how easily forces of nature can spiral out of our control.
+[Wildfire Swap](https://wildfire.fun) is a game about exploring the efforts to control those massive fires. It explores how a small spark can quickly turn into a raging inferno and how easily forces of nature can spiral out of our control.
 
 You take on the role of a wildland fire fighter. Your goal is to create firebreaks between out of control fires and people's homes by solving tile swapping puzzles. Like wild fires in the real world, you're at the mercy of the flames. You cannot extinguish them: you must do your best to contain them.
 
@@ -42,4 +42,4 @@ Every time you make a move to contain the fire, it spreads more out of control. 
 
 ![./wildfire-rectangle-solved.2019-05-31_19_15_59.gif](./wildfire-rectangle-solved.2019-05-31_19_15_59.gif)
 
-I hope that people have fun playing Wildfire Swap. And I hope that as they overcome the puzzles in this game, they get some sense of the enormous amount of planning and hard work fire fighting teams put in to contain these fires.
+I hope that people have fun playing [Wildfire Swap](https://wildfire.fun). And I hope that as they overcome the puzzles in this game, they get some sense of the enormous amount of planning and hard work fire fighting teams put in to contain these fires.
