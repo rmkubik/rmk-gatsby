@@ -12,3 +12,15 @@
   text-align: center;
   font-style: italic;
 }
+
+p img:not(.gatsby-resp-image-image) {
+  /* 
+    This targets img tags not being fixed by gatsby-image-remark
+    
+    This was originally added to fix the gifs added in the wildfire swap inspiration post
+  */
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

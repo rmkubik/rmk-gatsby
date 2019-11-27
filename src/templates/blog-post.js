@@ -6,6 +6,7 @@ import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import { rhythm, scale } from '../utils/typography';
 import styles from './blog-post.module.css';
+import profilePic from '../assets/ryan_casual_tea.jpg';
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -32,12 +33,26 @@ class BlogPostTemplate extends React.Component {
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[
-            { name: 'description', content: siteDescription },
+            // { name: 'description', content: siteDescription },
+            // { name: 'twitter:card', content: 'summary_large_image' },
+            // { name: 'twitter:site', content: siteUrl },
+            // { name: 'twitter:title', content: siteTitle },
+            // { name: 'twitter:description', content: siteDescription },
+            // { name: 'twitter:image', content: `${siteUrl}${slug}twitter-card.jpg` },
+
             { name: 'twitter:card', content: 'summary_large_image' },
-            { name: 'twitter:site', content: siteUrl },
-            { name: 'twitter:title', content: siteTitle },
-            { name: 'twitter:description', content: siteDescription },
-            { name: 'twitter:image', content: `${siteUrl}${slug}twitter-card.jpg` },
+            { name: 'twitter:site', content: '@ryrykubes' },
+            { name: 'twitter:creator', content: '@ryrykubes' },
+            { name: 'og:url', content: `${siteUrl}${slug}` },
+            { name: 'og:title', content: post.frontmatter.title },
+            { name: 'og:description', content: post.frontmatter.desc || siteDescription },
+            {
+              name: 'og:image',
+              content:
+                (post.frontmatter.featuredImage &&
+                  `${siteUrl}${post.frontmatter.featuredImage.publicURL}`) ||
+                `${siteUrl}${profilePic}`,
+            },
           ]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
@@ -120,6 +135,10 @@ export const pageQuery = graphql`
         title
         socialCard
         date(formatString: "MMMM DD, YYYY")
+        desc
+        featuredImage {
+          publicURL
+        }
       }
       fields {
         readingTime {

@@ -52,16 +52,14 @@ module.exports = {
                 field: 'title',
               },
               meta: {
-                parts: [
-                  { field: 'date', format: 'mmmm dS' },
-                ],
+                parts: [{ field: 'date', format: 'mmmm dS' }],
               },
             },
           },
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590,
+              maxWidth: 560,
             },
           },
           {
