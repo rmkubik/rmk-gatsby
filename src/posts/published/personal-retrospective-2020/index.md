@@ -1,6 +1,6 @@
 ---
-title: A review of 2019 and plans for 2020
-date: 2020-01-29
+title: A review of 2019 and a plan for 2020
+date: 2020-01-30
 tags: personal, retrospective, goals, plan, 2019, 2020
 ---
 
@@ -8,25 +8,25 @@ I did [my first personal retrospective](https://ryankubik.com/blog/personal-retr
 
 Looking back on last year's retrospective, I think I was overly focused on being "successful". The trouble was that I didn't (and still really don't) know what it means to be "successful".
 
-This year, I'm planning to focus more on enjoying my own self improvement, and trying to be less overly concerned about mapping out my path to future "success".
+This year, I'm planning to focus more on enjoying my own self improvement process, and trying to be less overly concerned about mapping out my path to future "success".
 
 ## Preoccupation with productivity
 
-As I think about the past few years, I think I've been overly concerned with being efficient and always doing the correct thing. I believe this obsession started part way through my first job after undergrad. It was the first time I found myself reckoning with the fact that it was all on me to make my life mean something.
+As I think about the past few years, I was always thinking about being efficient and making the correct next step. I believe this obsession started part way through my first job after undergrad. It was the first time I found myself reckoning with the fact that it was all on me to make my life mean something.
 
 This led to me reading a lot of self improvement type books and focusing on being productive. At the time, this stuff was great for me. I went from being unsatisfied with my lack of direction to gaining a statistic to measure against in "productivity". As long as I was getting more things done than before, I would one day become "successful"!
 
-There are worse things I could've been obsessed with. I found a job that I couldn't have imagined when I graduated. I've created a lot of projects I'm proud of over the past few years. However, its also led me to things like creative burn out and a lack of close relationships. I no longer think that "success" is worth the sacrifice. I'm not really convinced its even out there any more.
+There are worse things I could've been obsessed with. I found a job that I couldn't have imagined when I graduated. I've created a lot of projects I'm proud of over the past few years. However, its also led me to things like creative burn out and a lack of close relationships. I no longer think that my imagined "success" is worth the sacrifice. I'm not really convinced its even out there any more.
 
 ## Looking back at 2019
 
-This doesn't mean 2019 was a loss. I spent the majority of the first part of my year working hard to finish [Wildfire Swap](https://wildfire.fun) in time to show it at the [Seattle Indies Expo](https://six.seattleindies.org/) during PAX West. After the event, I realized I was working at an unsustainable rate for an after work project.
+This doesn't mean 2019 was a loss. I spent the majority of the first part of my year working hard to finish [Wildfire Swap](https://wildfire.fun) in time to show it at the [Seattle Indies Expo](https://six.seattleindies.org/) during PAX West. After the event, I realized I had been working at an unsustainable rate for an after work project.
 
 Since the event I've been taking a lot more time to do other things besides focusing solely on Wildfire Swap. Having other projects and activities mixed in has been really healthy for me.
 
 ### Created lots of little projects and prototypes
 
-I love to make things. When obsessing over a single project I try to push other ideas out of my mind. It helps me focus, but I find it therapeutic and rewarding to give in and make little projects. I'm sure I've missed some projects, but here's 11 of the ones I made.
+I love to make things. When obsessing over a single project I try to push other ideas out of my mind. It helps me focus, but I find it therapeutic and rewarding to give in and make little projects. Here's some of the projects I made over the year.
 
 - [Deved Path](https://deved.netlify.com/). A short autobiographica experience showing my path to becoming a developer educator working on TwilioQuest.
 - [Shield OS](https://shield-os.netlify.com/). A tiny narrative experiment in the form a computer terminal.
@@ -66,16 +66,18 @@ I read fewer books than I have in past years. I think I need to be more comforta
 - [Watership Down](https://www.goodreads.com/book/show/76620.Watership_Down)
 - [Lean Startup](https://www.goodreads.com/book/show/10127019-the-lean-startup)
 - [It Doesn't Have to be Crazy at Work](https://www.goodreads.com/book/show/38900866-it-doesn-t-have-to-be-crazy-at-work)
-- [Tractio](https://www.goodreads.com/book/show/22091581-traction?from_search=true&qid=bOYd4eMiqU&rank=1)[n](https://www.goodreads.com/book/show/22091581-traction)
+- [Traction](https://www.goodreads.com/book/show/22091581-traction)
 - [E Myth Revisited](https://www.goodreads.com/book/show/81948.The_E_Myth_Revisited)
 - [Megafire](https://www.goodreads.com/book/show/30971786-megafire)
 - [Just Fucking Ship It](https://stackingthebricks.com/just-fucking-ship/)
 
 ### Played a lot of different kinds video games
 
-I fell out of playing video games a lot as I spent more and more of my time making them! When I did play them, a lot of them were "research" games. Games similar to the ones I was making. This year, I did a much better job of spending some of my time relaxing and playing games that I enjoy.
+In previous years, I fell out of playing video games a lot. I was spending more and more of my time making them! When I did play them, a lot of them were "research" games. Games similar to the ones I was making.
 
-- [Rocket Le](https://www.rocketleague.com/)[ague](https://store.steampowered.com/app/252950/Rocket_League/)
+This year, I did a much better job of spending some of my time relaxing and playing games that I enjoy.
+
+- [Rocket League](https://store.steampowered.com/app/252950/Rocket_League/)
 - [Age of Empires 2: Definitive Edition](https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/)
 - [Mindustry](https://store.steampowered.com/app/1127400/Mindustry/)
 - [Celeste](https://store.steampowered.com/app/504230/Celeste/)
@@ -144,7 +146,7 @@ Community is super important to me in many regards. I want to do a better job of
 
 Additionally, I want to help build a community of like-minded people who are into making games and supporting each other while doing it. I've started doing this over the past year by trying to build an audience for my own games via blogging and a creating a discord for Wildfire Swap. Towards the end of the year, I started doing more community oriented things that I've enjoyed a lot like running [Feedback Nights](https://r-k.io/feedback-night.html) and [Mentorship Saturdays](https://www.meetup.com/Mentorship-Saturdays/).
 
-In the new year, I want to continue earning the trust of these communities and help empower us to create more far reaching games than we've been able to in the past.
+In the new year, I want to continue earning the trust of these communities and helping empower us to create more far reaching games than we've been able to in the past.
 
 ## What do you want to focus on in 2020?
 
