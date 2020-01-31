@@ -16,7 +16,7 @@ As I think about the past few years, I was always thinking about being efficient
 
 This led to me reading a lot of self improvement type books and focusing on being productive. At the time, this stuff was great for me. I went from being unsatisfied with my lack of direction to gaining a statistic to measure against in "productivity". As long as I was getting more things done than before, I would one day become "successful"!
 
-There are worse things I could've been obsessed with. I found a job that I couldn't have imagined when I graduated. I've created a lot of projects I'm proud of over the past few years. However, its also led me to things like creative burn out and a lack of close relationships. I no longer think that my imagined "success" is worth the sacrifice. I'm not really convinced its even out there any more.
+There are worse things I could've been obsessed with. I found a job that I couldn't have imagined when I graduated. I've created a lot of projects I'm proud of over the past few years. However, it's also led me to things like creative burn out and a lack of close relationships. I no longer think that my imagined "success" is worth the sacrifice. I'm not really convinced it's even out there any more.
 
 ## Looking back at 2019
 
@@ -37,7 +37,7 @@ I love to make things. When obsessing over a single project I try to push other 
 
 ### Became a game developer officially
 
-I met a major longer term goal of mine to work full time in games with my new role helping to make [TwilioQuest](https://twilio.com/quest). Its been very exciting to get to spend way more time making games than ever before. Its come with a lot of new challenges, but I'm enjoying it a lot.
+I met a major longer term goal of mine to work full time in games with my new role helping to make [TwilioQuest](https://twilio.com/quest). It's been very exciting to get to spend way more time making games than ever before. It's come with a lot of new challenges, but I'm enjoying it a lot.
 
 Reaching this goal has left me with a little bit of a void. Working in games full time used to be something I was striving toward. Now that I've reached it, I'm not sure what to focus on next!
 
