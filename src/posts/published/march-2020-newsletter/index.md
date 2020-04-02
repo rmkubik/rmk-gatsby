@@ -13,7 +13,7 @@ Hey everyone!
 
 I think this has been an incredibly weird month for just about everyone in the world. We've been working on Wildfire Swap during these times but its definitely been a little more challenging than usual. Currently, we're working on tightening up the new mechanics in the advanced worlds and squashing some of our more edge case-y bugs.
 
-The link to check out the update demo didn't go out correctly last month, if you missed it then be sure to check it out now!
+The link to check out the updated demo didn't go out correctly last month, if you missed it then be sure to check it out now!
 
 🔥 [Learn more about Wildfire Swap on our website!](https://wildfire.fun)
 
